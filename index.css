@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.classico {
+  display: grid;
+  gap: 10px 10px;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas:
+    "n n"
+    "s images";
+}
+
+.grid-area {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-area: images;
+  height: 100vh;
+  gap: 10px 10px;
+
+ 
+}
+.image-area {
+  background-color: black;
+ 
+}
+
+.nav-bar {
+  background-color: rgb(206, 216, 213);
+  height: 100px;
+  grid-area: n;
+}
+
+.sidebar {
+  grid-area: s;
+  width: 200px;
+}
